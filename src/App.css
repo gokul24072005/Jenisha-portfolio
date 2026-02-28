@@ -94,3 +94,46 @@
 .project-link:hover { text-decoration: underline; }
 
 .site-footer { text-align:center; margin-top:36px; padding-top:16px; border-top:1px solid rgba(15,23,42,0.04); color:var(--muted); }
+
+/* Typographic helpers */
+.hero-name {
+  font-size: 36px;
+  margin: 0 0 6px 0;
+}
+.hero-degree {
+  color: #555;
+  margin: 0 0 10px 0;
+}
+.location { display:flex; align-items:center; gap:6px; justify-content:flex-start; }
+.section-text { line-height:1.6; text-align: left; }
+
+/* Responsive adjustments */
+@media (max-width: 720px) {
+  .app-container {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-width: 4px;
+  }
+
+  .hero-name { font-size: 28px; }
+  .section-heading { font-size: 18px; display: block; text-align: center; }
+  .section-text { text-align: center; }
+
+  .info-card { padding: 12px; }
+  .project-link { justify-content: center; }
+  .site-footer { font-size: 13px; }
+}
