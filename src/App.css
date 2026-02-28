@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Light theme portfolio styles */
+.app-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(247,251,255,0.8));
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(15,23,42,0.06);
+  color: var(--text);
+}
+
+.hero-section {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid rgba(37,99,235,0.12);
+  box-shadow: 0 6px 18px rgba(15,23,42,0.08);
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+.profile-img:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(15,23,42,0.12); }
+
+.section-heading {
+  margin-top: 26px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  display: inline-block;
+  padding-bottom: 6px;
+  border-bottom: 3px solid rgba(37,99,235,0.12);
+}
+
+.info-card {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(15,23,42,0.04);
+  box-shadow: 0 6px 16px rgba(15,23,42,0.04);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.info-card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(15,23,42,0.08); }
+
+.project-link { color: var(--accent); text-decoration: none; display: inline-flex; gap: 6px; align-items:center; }
+.project-link:hover { text-decoration: underline; }
+
+.site-footer { text-align:center; margin-top:36px; padding-top:16px; border-top:1px solid rgba(15,23,42,0.04); color:var(--muted); }
